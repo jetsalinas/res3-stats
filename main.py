@@ -39,6 +39,7 @@ def debug_csv(lines = 2):
 		print()
 
 def pearson_correlate(csv_files = None):
+	output = []
 	if csv_files is None:
 		csv_files = load_csv()
 	for i in csv_files:
@@ -47,6 +48,7 @@ def pearson_correlate(csv_files = None):
 			print(j.name)
 			if i == j:
 				print("Found same file: breaking")
+				print("===========================")
 				continue
 			x_reader = csv.reader(i)
 			y_reader = csv.reader(j)
@@ -56,9 +58,10 @@ def pearson_correlate(csv_files = None):
 
 			country_name = ""
 			country_code = ""
+
 			for x_row, y_row in zip(x_reader, y_reader):
 
-				country_name = x_row[0]
+				country_name = x_row[0].replace(",", "")
 				country_code = x_row[1]
 				
 				for m in x_row[2:]:
@@ -73,18 +76,31 @@ def pearson_correlate(csv_files = None):
 					except ValueError:
 						y_data.append(0)
 
-				print(country_code)
 				r, p_value = stats.pearsonr(x_data, y_data)
-				print("Pearson Correlation: ", r, p_value)
+				r = float(r)
+				p_value = float(p_value)
 
-				x_data = []
-				y_data = []
+				output.append([country_name, country_code, r, p_value])
+				
+			x_data = []
+			y_data = []
 			print("===========================")
 
+	return output
+
+results_directory = os.path.join("results-formatted")
+
+def pearson_save(pearson_results = None):
+	if pearson_results is None:
+		pearson_results = pearson_correlate()
+	with open("{0}/{1}".format(results_directory, "pearson_results.csv"), mode = 'w') as output:
+		for i in pearson_results:
+			output.write(",".join([str(m) for m in i]) + "\n")
 			
 def run_stats():
 	csv_files = load_csv()
-	pearson_correlate(csv_files)
+	pearson_results = pearson_correlate(csv_files)
+	pearson_save(pearson_results)
 
 if __name__ == "__main__":
 	run_stats()
