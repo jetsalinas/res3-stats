@@ -7,10 +7,10 @@ import os
 
 formatted_data_directory = os.path.join("data-formatted/")
 
-def analyze():
-
-	indicators = pd.read_csv("{0}{1}".format(formatted_data_directory, "indicators.csv"))
-	print(indicators.tail())
+def get_data():
+	data = pd.read_csv("{0}{1}".format(formatted_data_directory, "indicators.csv"))
+	#headers: country_name country_code indicator_name indicator_code year value
+	return data
 
 def run():
 	analyze()
