@@ -1,0 +1,387 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"country_code"
+			],
+			[
+				"res",
+				"results-formatted"
+			],
+			[
+				"x_",
+				"x_axis"
+			],
+			[
+				"coun",
+				"country_code"
+			],
+			[
+				"pear",
+				"pearson_results"
+			],
+			[
+				"pearson",
+				"pearson_correlate"
+			],
+			[
+				"pearson_",
+				"pearson_results"
+			],
+			[
+				"pea",
+				"pearson_correlate"
+			],
+			[
+				"cou",
+				"country_code"
+			],
+			[
+				"p",
+				"p_value"
+			],
+			[
+				"c",
+				"country_name"
+			],
+			[
+				"re",
+				"results_directory"
+			],
+			[
+				"countr",
+				"country_name"
+			],
+			[
+				"x",
+				"x_reader"
+			],
+			[
+				"y_",
+				"y_reader"
+			],
+			[
+				"y_r",
+				"y_reader"
+			],
+			[
+				"rea",
+				"x_reader"
+			],
+			[
+				"x_r",
+				"x_reader"
+			],
+			[
+				"csv_",
+				"csv_files"
+			],
+			[
+				"__",
+				"__next__"
+			],
+			[
+				"csv",
+				"csv_files"
+			],
+			[
+				"debug",
+				"debug_csv"
+			],
+			[
+				"na",
+				"names"
+			],
+			[
+				"csv_d",
+				"csv_directory"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Kaggle Data Sets:\n\nhttps://www.kaggle.com/pestipeti/wid-world\nhttps://www.kaggle.com/worldbank/world-development-indicators",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Windows",
+				"name": "Kaggle Data Sets:"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"hello",
+			"cd",
+			"test"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Josie Files/2017 - 2018/English 6/pre_speech_worksheet_3_papers/apa_citations.txt",
+		"/C/Users/Jose Salinas/Desktop/maded-interview.txt",
+		"/D/Josie Files/2017 - 2018/STR 3/res3-stats/main.py",
+		"/D/Josie Files/2017 - 2018/STR 3/labjournal.txt",
+		"/D/Josie Files/2017 - 2018/STR 3/res3-stats/results-formatted/pearson_results.csv",
+		"/D/Applications/Steam server/sourcemod-1.8.0-git5969-windows/cfg/sourcemod/sourcemod.cfg",
+		"/D/Applications/Steam server/sourcemod-1.8.0-git5969-windows/cfg/sourcemod/sm_warmode_on.cfg",
+		"/D/Applications/Steam server/SteamCMD.GUI/steamcmd/steamapps/common/Counter-Strike Global Offensive Beta - Dedicated Server/cfg/server.cfg",
+		"/D/Applications/Steam server/SteamCMD.GUI/steamcmd/steamapps/common/Counter-Strike Global Offensive Beta - Dedicated Server/cfg/autoexec.cfg",
+		"/D/Applications/Steam server/steamcmd/steamapps/common/Counter-Strike Global Offensive Beta - Dedicated Server/cfg/autoexec.cfg",
+		"/C/Users/Jose Salinas/Desktop/script.txt",
+		"/C/Users/Jose Salinas/Desktop/Goodbye.txt",
+		"/C/Users/Jose Salinas/Desktop/WindowsTimeUTC.reg",
+		"/D/Applications/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/autoexec.cfg",
+		"/C/Users/Jose Salinas/Desktop/Brainblast notes",
+		"/C/Users/Jose Salinas/Desktop/Ugat ng lahi.txt",
+		"/D/Applications/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/autoexec.cfg",
+		"/C/Users/Jose Salinas/Desktop/gay.py",
+		"/D/Josie Files/Projects/sc-elections-2017/main.py",
+		"/D/Applications/UniformServer/UniServerZ/www/mediawiki-1.29.1/LocalSettings.php",
+		"/C/Users/Jose Salinas/Desktop/English - SC notes.txt",
+		"/D/Applications/UniformServer/UniServerZ/www/mediawiki-1.29.1/index.php",
+		"/D/Josie Files/2017 - 2018/Social Science 6/Ugat ng Lahi Notes",
+		"/D/Josie Files/2017 - 2018/Physics 4.2/Experiment 6/ExportedData.csv",
+		"/D/Josie Files/2017 - 2018/Physics 4.2/Experiment 6/You can do it.spklab",
+		"/C/Users/Jose Salinas/Desktop/English - SC notes",
+		"/C/Users/Jose Salinas/Downloads/predicting_poverty_trained.caffemodel",
+		"/C/Users/Jose Salinas/Desktop/007Mix Raffle.txt",
+		"/D/Josie Files/Internship/conferences.txt",
+		"/D/Josie Files/Internship/Imaging/digital image processing - notes.txt",
+		"/D/Josie Files/Projects/Duterte/request.py",
+		"/D/Josie Files/Projects/Duterte/client.py",
+		"/D/Josie Files/Projects/Duterte/server.py",
+		"/D/Josie Files/Internship/ethical hacking.txt",
+		"/D/Josie Files/Projects/Duterte/hello world.py",
+		"/D/Josie Files/Internship/Imaging/digital image processing - notes",
+		"/D/Josie Files/Projects/DENR Posters/notes",
+		"/C/Users/Jose Salinas/.ssh/github_rsa.pub",
+		"/D/Josie Files/Projects/jetsalinas.github.io/jetsalinas.github.io/index.html",
+		"/C/Users/Jose Salinas/Desktop/dummy_data_namria.csv",
+		"/D/Josie Files/Projects/jetsalinas.github.io/jetsalinas.github.io/namria/data.csv",
+		"/D/Josie Files/Projects/jetsalinas.github.io/jetsalinas.github.io/namria/index.html",
+		"/D/Josie Files/2016 - 2017/Academics/STR/Actual Work/Data/Auxilliary/str data registry",
+		"/C/Users/Jose Salinas/Desktop/parser.java",
+		"/D/Josie Files/2016 - 2017/Academics/STR/Actual Work/Data/meteoroutput_alcz.txt",
+		"/C/Users/Jose Salinas/Desktop/math notes",
+		"/C/Users/Jose Salinas/Desktop/time.txt",
+		"/C/Users/Jose Salinas/Desktop/str data registry",
+		"/D/Josie Files/2016 - 2017/Academics/STR/Actual Work/Data/Auxilliary/str data registry.txt",
+		"/D/Josie Files/2016 - 2017/Academics/Math/Portfolio 4-1/notes",
+		"/D/Josie Files/2016 - 2017/Academics/Filipino/topic proposals",
+		"/C/Users/Jose Salinas/Desktop/366159",
+		"/D/Josie Files/2016 - 2017/Others/SATs/sat practice test 2 - personal notes",
+		"/D/Josie Files/2016 - 2017/Others/SATs/sat practice test 1 - personal notes",
+		"/C/Users/Jose Salinas/Desktop/thoughts",
+		"/C/Users/Jose Salinas/Desktop/reboot attendance.txt",
+		"/D/code/test.cpp",
+		"/D/code/Test.java",
+		"/D/Josie Files/2016 - 2017/STR/Actual Work/STR2017/STR2017/app/src/main/java/salinas/primary/sensors/SensorScheduleService.java",
+		"/D/Josie Files/2016 - 2017/STR/Actual Work/STR2017Web/server/server/main.py",
+		"/D/Josie Files/2016 - 2017/Scale/Invictus/29 march 2017 debate.txt",
+		"/D/Josie Files/2016 - 2017/STR/Actual Work/STR2017Web/server/server/templates/index.html",
+		"/D/code/Helloworld.java",
+		"/D/applications/xampp/phpMyAdmin/config.inc.php",
+		"/C/Users/Jose Salinas/Downloads/mysql-5.7.17-winx64/mysql-5.7.17-winx64/README"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"printt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								19
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Kaggle Data Sets:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "res3-stats.sublime-project",
+	"replace":
+	{
+		"height": 55.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
