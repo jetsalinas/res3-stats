@@ -101,4 +101,9 @@ ENV/
 .mypy_cache/
 
 #project
-/data-formatted/old
+/data-formatted/
+/data-formatted/old/
+/data-raw/
+
+!/data-raw/manifest.csv
+!/data-formatted/manifest.csv
