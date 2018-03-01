@@ -7,6 +7,8 @@ formatted_data_directory = os.path.join("data-formatted/")
 country_codes = ["BRN", "KHM", "IDN", "LAO", "MYS", "MMR", "PHL", "SGP", "THA", "VNM", "WLD"]
 
 def limit_countries():
+	print("Generating SEA-limited csv file")
+
 	raw_idc = open("{0}{1}".format(raw_data_directory, "indicators.csv"), 'r')
 	raw_reader = csv.reader(raw_idc)
 
@@ -23,6 +25,7 @@ def limit_countries():
 def limit_countries_and_indicators():
 	
 	limit_countries()
+	print("Generating indicator limited csv file")
 
 	codes_idc = open("{0}{1}".format(formatted_data_directory, "indicator-codes.csv"), 'r')
 	codes_reader = csv.reader(codes_idc)
@@ -44,5 +47,8 @@ def limit_countries_and_indicators():
 	sea_idc.close()
 	out_idc.close()
 
-if __name__ == "__main__":
+def run():
 	limit_countries_and_indicators()
+
+if __name__ == "__main__":
+	run()

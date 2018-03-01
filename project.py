@@ -5,6 +5,8 @@ raw_data_directory = os.path.join("data-raw/")
 formatted_data_directory = os.path.join("data-formatted/")
 
 def create_formatted_outputs():
+	print("Initializing project files.")
+
 	f_manifest = open("{0}{1}".format(formatted_data_directory, "manifest.csv"))
 	f_reader = csv.reader(f_manifest)
 
@@ -17,6 +19,7 @@ def create_formatted_outputs():
 	f_manifest.close()
 
 def describe_codes():
+	print("Adding indicator descriptions")
 
 	codes_idc = open("{0}{1}".format(raw_data_directory, "series.csv"), 'r')
 	codes_reader = csv.reader(codes_idc)
@@ -27,7 +30,6 @@ def describe_codes():
 	codes_formatted = []
 	for i in codes_formatted_reader:
 		codes_formatted.append(i[0])
-	print(codes_formatted)
 
 	codes_formatted_idc.close()
 
@@ -38,7 +40,9 @@ def describe_codes():
 		if i[0] in codes_formatted:
 			codes_desc_writer.writerow(i)
 
-if __name__ == "__main__":
-	print("Initializing project files.")
+def run():
 	create_formatted_outputs()
 	describe_codes()
+
+if __name__ == "__main__":
+	run()
