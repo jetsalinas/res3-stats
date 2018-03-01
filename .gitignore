@@ -101,4 +101,4 @@ ENV/
 .mypy_cache/
 
 #project
-/data-raw
+/data-formatted/old
