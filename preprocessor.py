@@ -20,6 +20,8 @@ def limit_csv():
 	out_idc = open("{0}{1}".format(formatted_data_directory, "indicators.csv"), 'w', newline='')
 	out_writer = csv.writer(out_idc)
 
+	out_writer.writerow(["country_name", "country_code", "indicator_name", "indicator_code", "year", "value"])
+
 	for i in raw_reader:
 		if i[1] in country_codes and i[3] in codes:
 			out_writer.writerow(i)
