@@ -109,3 +109,4 @@ res3-stats.sublime-workspace
 
 !/data-raw/manifest.csv
 !/data-formatted/manifest.csv
+!/data-formatted/indicator-codes.csv
