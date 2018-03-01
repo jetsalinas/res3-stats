@@ -1,5 +1,6 @@
 from scipy import stats
 import numpy
+import matplotlib.pyplot
 import csv
 
 import os
@@ -39,16 +40,13 @@ def debug_csv(lines = 2):
 		print()
 
 def pearson_correlate(csv_files = None):
+	"Running pearson correlation tests."
 	output = []
 	if csv_files is None:
 		csv_files = load_csv()
 	for i in csv_files:
 		for j in csv_files:
-			print(i.name)
-			print(j.name)
 			if i == j:
-				print("Found same file: breaking")
-				print("===========================")
 				continue
 			x_reader = csv.reader(i)
 			y_reader = csv.reader(j)
@@ -84,23 +82,78 @@ def pearson_correlate(csv_files = None):
 				
 			x_data = []
 			y_data = []
-			print("===========================")
 
 	return output
 
 results_directory = os.path.join("results-formatted")
 
 def pearson_save(pearson_results = None):
+	print("Saving pearson correlation test results.")
 	if pearson_results is None:
 		pearson_results = pearson_correlate()
 	with open("{0}/{1}".format(results_directory, "pearson_results.csv"), mode = 'w') as output:
 		for i in pearson_results:
 			output.write(",".join([str(m) for m in i]) + "\n")
+
+
+images_directory = os.path.join("results-formatted\line-plots")
+
+def plot_images(csv_files = None, years = (1960, 2017)):
+	print("Saving plot images.")
+	output = []
+	if csv_files is None:
+		csv_files = load_csv()
+	lmao = 1
+	for i in csv_files:
+		for j in csv_files:
+			if i == j:
+				continue
+			y1_reader = csv.reader(i)
+			y2_reader = csv.reader(j)
+
+			y1_data = []
+			y2_data = []
+
+			country_name = ""
+			country_code = ""
+
+			i_name = i.name.split("/")[1].split(".")[0]
+			j_name = j.name.split("/")[1].split(".")[0]
+
+			for y1_row, y2_row in zip(y1_reader, y2_reader):
+
+				country_name = y1_row[0].replace(",", "")
+				country_code = y2_row[1]
+				
+				for m in y1_row[2:]:
+					try:
+						x1_data.append(float(m))
+					except ValueError:
+						x1_data.append(None)
 			
+				for m in y2_row[2:]:
+					try:
+						y2_data.append(float(m))
+					except ValueError:
+						y2_data.append(None)
+
+				x_axis = [i for i in range(years[0], years[1])]
+				plt = pyplot.plot(x_axis, y1_data, 'rs', x_axis, y2_data, 'b^')
+				plt.show()
+				print("Saving image: {0}/{1}-{2} {3}.png".format(images_directory, i_name, j_name, country_code))
+				plt.savefig("{0}/{1}-{2} {3}.png".format(images_directory, i_name, j_name, country_code))
+
+				if lmao == 1:
+					pyplot.ioff()
+					lmao = 2
+
+
+
 def run_stats():
 	csv_files = load_csv()
 	pearson_results = pearson_correlate(csv_files)
 	pearson_save(pearson_results)
+	plot_images(csv_files)
 
 if __name__ == "__main__":
 	run_stats()
