@@ -13,13 +13,14 @@ def create_formatted_outputs():
 	for i in f_reader:
 		try:
 			new_file = open("{0}{1}".format(formatted_data_directory, i[0]), 'x')
+			print("Creating file: " + i[0])
 		except:
 			print("Unable to create file. File already exists: " + i[0])
 
 	f_manifest.close()
 
 def describe_codes():
-	print("Adding indicator descriptions")
+	print("Adding indicator descriptions.")
 
 	codes_idc = open("{0}{1}".format(raw_data_directory, "series.csv"), 'r')
 	codes_reader = csv.reader(codes_idc)
